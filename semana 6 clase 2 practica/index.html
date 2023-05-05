@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    </head>
+    
+    <style type="text/css">
+        ul {
+            list-style: none;
+        }
+    
+        ul li {
+            padding: 10px;
+        }
+    </style>
+    
+    <body>
+        <h1>
+            <center>FORMULARIO PRINCIPAL</center>
+        </h1>
+        <form onsubmit="salida()">
+            <fieldset>
+                <ul>
+                    <li>
+                        <label form="nombre">NOMBRE: </label>
+                        <input type="text" name="nombre" id="nombre">
+                    </li>
+                    <li>
+                        <label form="apellido">APELLIDO: </label>
+                        <input type="text" name="apellido" id="apellido">
+                    </li>
+                    <li>
+                        <label form="usuario">USUARIO: </label>
+                        <input type="text" name="usuario" id="usuario">
+                    </li>
+                    <li>
+                        <label form="direccion">DIRECCION: </label>
+                        <input type="text" name="direccion" id="direccion">
+                    </li>
+                    <li>
+                        <label form="correo">CORREO: </label>
+                        <input type="text" name="correo" id="correo">
+                    </li>
+                    <li>
+                        <label form="comentario">COMENTARIO: </label>
+                        <div style="position:relative; left:120px; top:-15px">
+                        <textarea name="comentario" cols="30" rows="10"></textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="position:relative; left:500px; bottom:250px">
+                        <input type="submit" name="Enviar" value="Enviar">
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        <script async type="text/javascript" src="datos.js"></script>
+    </body>
+    
+    </html>
